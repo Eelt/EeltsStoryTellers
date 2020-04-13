@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
     <identifier>ModManager</identifier>
-    <version>0.2.3.0</version>
+    <version>0.2.4.0</version>
     <manifestUri>https://raw.githubusercontent.com/Eelt/EeltsStoryTellers/master/About/Manifest.xml</manifestUri>
-    <downloadUri>https://github.com/Eelt/EeltsStoryTellers/releases/tag/0.2.3.0</downloadUri>
+    <downloadUri>https://github.com/Eelt/EeltsStoryTellers/releases/tag/0.2.4.0</downloadUri>
     <showCrossPromotions>true</showCrossPromotions>
 </Manifest>
