@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+	<!-- Patch values from 1.0 version of Eelt's Story Tellers to provide a similar experience -->
+		
+ 		<li Class="PatchOperationReplace">
+			<xpath>/Defs/StorytellerDef//comps/li[@Class = "StorytellerCompProperties_RandomQuest"]/onDays</xpath>
+			<value>
+				<onDays>4</onDays>
+			</value>
+		</li>
+			
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/StorytellerDef//comps/li[@Class = "StorytellerCompProperties_RandomQuest"]/offDays</xpath>
+			<value>
+				<offDays>0.5</offDays>
+			</value>
+		</li>
+ 		<li Class="PatchOperationReplace">
+			<xpath>/Defs/StorytellerDef//comps/li[@Class = "StorytellerCompProperties_RandomQuest"]/numIncidentsRange</xpath>
+			<value>
+				<numIncidentsRange>4~9</numIncidentsRange>
+			</value>
+		</li>
+			
+ 		<li Class="PatchOperationReplace">
+			<xpath>/Defs/StorytellerDef//comps/li[@Class = "StorytellerCompProperties_RandomQuest"]/minSpacingDays</xpath>
+			<value>
+				<minSpacingDays>0.2</minSpacingDays>
+			</value>
+		</li>
+			
+		</operations>
+	</Operation>
+	
+</Patch>
