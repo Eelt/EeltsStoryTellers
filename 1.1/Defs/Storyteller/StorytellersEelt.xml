@@ -50,7 +50,6 @@
 				<onDays>1.0</onDays>
 				<offDays>0.5</offDays>
 				<minSpacingDays>0.04</minSpacingDays>
-				<applyRaidBeaconThreatMtbFactor>true</applyRaidBeaconThreatMtbFactor>
 				<numIncidentsRange>1~2</numIncidentsRange>
 			</li>
       			<li Class="StorytellerCompProperties_OnOffCycle"> 
@@ -144,8 +143,25 @@
         </allowedTargetTags>
       </li>
       <!-- World Events -->
-      <li Class="StorytellerCompProperties_JourneyOffer"/>
-	  <!-- Give Quest -->
+	    <!-- Give Quests Non-Royalty -->
+	    <li Class="StorytellerCompProperties_RandomQuest">
+        <category>GiveQuest</category>
+        <allowedTargetTags>
+          <li>World</li>
+        </allowedTargetTags>
+        <onDays>4</onDays>
+        <offDays>0.5</offDays>
+        <numIncidentsRange>4~9</numIncidentsRange>
+        <acceptFractionByDaysPassedCurve>
+          <points>
+            <li>(5, 0)</li>
+            <li>(30, 1)</li>
+			      <li>(40, 5)</li>
+          </points>
+        </acceptFractionByDaysPassedCurve>
+        <minSpacingDays>0.2</minSpacingDays>
+      </li>
+	  <!-- Legacy
       <li Class="StorytellerCompProperties_OnOffCycle">
         <category>GiveQuest</category>
         <allowedTargetTags>
@@ -163,6 +179,7 @@
           </points>
         </acceptFractionByDaysPassedCurve>
       </li>
+	  -->
       <li Class="StorytellerCompProperties_CategoryMTB">
         <category>Misc</category>
         <allowedTargetTags>
